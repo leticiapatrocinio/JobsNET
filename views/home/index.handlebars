@@ -1,0 +1,137 @@
+<form action=""  method="POST" >
+  <h2>Dados Pessoais</h2>
+
+<div class="card">
+    <div class="card-body" >
+        <div class="row">
+            <div class="col">
+            <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="cargo">Cargo Pretendido</label>
+                <input type="text" name="cargo" id="cargo" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="estado_civil">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil" class="form-select" aria-label="Default select example">
+                <option value="S">Solteiro(a)</option>
+                <option value="C">Casado(a)</option>
+                <option value="D">Divorciado(a)</option>
+                <option value="V">Viuvo(a)</option>
+            </select>
+            </div>
+            <div class="col">
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero" class="form-select" aria-label="Default select example">
+                <option value="NI">Não informar</option>
+                <option value="Mc">Masculino cis</option>
+                <option value="Fc">Feminino cis</option>
+                <option value="Mt">Mascilino trans</option>
+                <option value="Ft">Feminino trans</option>
+            </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="bairro">Bairro</label>
+                <input type="bairro" name="bairro" id="bairro" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="uf">Estado</label>
+                <input type="text" name="uf" id="uf" class="form-control" required>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="fixo1">Telefone fixo 1</label>
+                <input type="number" name="fixo1" id="fixo1" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="fixo2">Telefone fixo 2</label>
+                <input type="number" name="fixo2" id="fixo1" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="celular">Celular</label>
+                <input type="number" name="celular" id="celular" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="contato">Contato</label>
+                <input type="text" name="contato" id="contato" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+        </div>
+    </div>
+   
+    <h2>Documentos</h2>
+    
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+            <label for="rg">Identidade</label>
+                <input type="number" name="rg" id="rg" class="form-control" required>
+            </div>
+            <div class="col">
+            <label for="cpf">CPF</label>
+                <input type="number" name="cpf" id="cpf" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label for="veiculo">Possui veículo</label>
+            <select name="veiculo" id="veiculo" class="form-select" aria-label="Default select example">
+                <option value="S">Sim</option>
+                <option value="N">Não</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="cnh">Habilitação</label>
+            <select name="cnh" id="cnh" class="form-select" aria-label="Default select example">
+                <option value="S">Sim</option>
+                <option value="N">Não</option>
+            </select>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+<br>
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-success" type="button">Salvar</button>
+</div>
+<br>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>

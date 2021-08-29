@@ -8,7 +8,9 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
-    "moongoose": "0.0.5"
+    "mongoose": "^6.0.2",
+    "moongoose": "0.0.5",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {},
   "scripts": {

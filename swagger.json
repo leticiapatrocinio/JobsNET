@@ -1,0 +1,118 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "JobsNet",
+      "description": "API de cadastro dos candidatos, recebe todos os dados preenchidos no formulário",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, genêro, email e cep",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "cargo": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "date"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "genero": {
+                      "type": "string"
+                    },
+                    "endereco": {
+                    "type": "string"
+                    },
+                    "cep": {
+                    "type": "string"
+                    },
+                    "bairro": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "uf": {
+                        "type": "string"
+                    },
+                    "fixo1": {
+                        "type": "string"
+                    },
+                    "fixo2": {
+                        "type": "string"
+                    },
+                    "celular": {
+                        "type": "string"
+                    },
+                    "contato": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "rg": {
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                    },
+                    "veiculo": {
+                        "type": "string"
+                    },
+                    "habilitacao": {
+                        "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "João Pedro": {
+                    "value": {
+                      "nome": "João Pedro",
+                      "cargo": "Professor",
+                      "data": "01/01/2000",
+                      "estado": "Solteiro",
+                      "genero": "Masculino cis",
+                      "endereco": "Rua Marte",
+                      "cep": "00000000",
+                      "bairro": "Vila Dirce",
+                      "cidade": "São Paulo",
+                      "uf": "SP",
+                      "fixo1": "0000-0000",
+                      "fixo2": "0000-0000",
+                      "celular": "00000-0000",
+                      "contato": "LinkedIn",
+                      "email": "user.joao@email.com",
+                      "rg": "000000000",
+                      "cpf": "00000000000",
+                      "veiculo": "Não",
+                      "habilitacao": "Não"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -23,7 +23,7 @@ const mongoose = require("mongoose")
 
 
     //Moongoose
-    mongoose.Promisse = global.Promise;
+    //mongoose.Promisse = global.Promise;
     mongoose.connect('mongodb+srv://leticia:16061995@cluster0.ithki.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then(() => {
         console.log("Conectado ao mongo")
     }).catch((err) =>{

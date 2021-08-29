@@ -4,9 +4,12 @@ const mongoose = require("mongoose")
 require("../models/Candidato")
 const Candidato = mongoose.model('candidato')
 
-
-router.post('/registro', (req, res) => {
-    const novoCandidato = {
+router.get('/register', (req, res) => {
+    console.log("pegou")
+})
+router.post ('/register', (req, res)=> {
+        console.log("funfou") 
+        const novoCandidato = {
         nome: req.body.nome,
         cargo: req.body.cargo,
         data: req.body.data,
@@ -27,10 +30,10 @@ router.post('/registro', (req, res) => {
         veiculo: req.body.veiculo,
         habilitacao: req.body.habilitacao
     }
-    new Candidato(novoCandidato).save.then(() =>{
+    new Candidato(novoCandidato).save().then(() =>{
         console.log("Candidato salvo")
     }).catch((err) => {
-        console.log("Erro ao salvar candidato")
+        console.log("Erro ao salvar candidato"+err)
     })
 
 })

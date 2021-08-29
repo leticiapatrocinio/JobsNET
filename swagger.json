@@ -15,7 +15,7 @@
     ],
   
     "paths": {
-      "/register": {
+      "/home/register": {
         "post": {
           "summary": "Cadastro de candidato",
           "description": "Rota de cadastro de usuário, recebe: nome, genêro, email e cep",

@@ -1,4 +1,4 @@
-<form action=""  method="POST" >
+<form action="http://localhost:5000/home/register"  method="POST" >
   <h2>Dados Pessoais</h2>
 
 <div class="card">
@@ -65,21 +65,21 @@
         <div class="row">
             <div class="col">
             <label for="fixo1">Telefone fixo 1</label>
-                <input type="number" name="fixo1" id="fixo1" class="form-control" required>
+                <input type="number" name="fixo1" id="fixo1" class="form-control" >
             </div>
             <div class="col">
             <label for="fixo2">Telefone fixo 2</label>
-                <input type="number" name="fixo2" id="fixo1" class="form-control" required>
+                <input type="number" name="fixo2" id="fixo1" class="form-control" >
             </div>
             <div class="col">
             <label for="celular">Celular</label>
-                <input type="number" name="celular" id="celular" class="form-control" required>
+                <input type="number" name="celular" id="celular" class="form-control" >
             </div>
         </div>
         <div class="row">
             <div class="col">
             <label for="contato">Contato</label>
-                <input type="text" name="contato" id="contato" class="form-control" required>
+                <input type="text" name="contato" id="contato" class="form-control" >
             </div>
             <div class="col">
             <label for="email">Email</label>
@@ -117,11 +117,16 @@
             </select>
         </div>
     </div>
+    <br>
+    <div class="row">
+        <div class="d-grid gap-2 col-6 mx-auto"></div>
+            <button onclick="alert('Candidato Salvo');" type="submit" class="btn btn-success">Salvar</button>
+        </div>
+    </div>
 </form>
 </div>
 </div>
 <br>
-<div class="d-grid gap-2 col-6 mx-auto">
-    <a  class="btn btn-success" href="/home/fim">Salvar</a>
 </div>
 <br>
+

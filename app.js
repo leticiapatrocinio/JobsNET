@@ -17,7 +17,6 @@ const mongoose = require("mongoose")
     app.use(bodyParser.json())
 
     // Handlebars
-    //app.engine('handlebars', hbs.engine);
     app.engine('handlebars', handlebars({defaultLayout: 'main'}))
     app.set('view engine', 'handlebars');
 
@@ -44,7 +43,7 @@ app.use('/home', home)
 
 
 //Outros
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log("Servidor rodando!")
 })
